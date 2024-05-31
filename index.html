@@ -12,6 +12,7 @@
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -41,7 +42,8 @@
         <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
         <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
         <li><a href="#skills" class="nav-link scrollto"><i class="bx bx-briefcase"></i> <span>Skills</span></a></li>
-        <!-- <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li> -->
+        <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
+        <li><a href="#testimonials" class="nav-link scrollto"><i class="bx bx-like"></i> <span>Recommendations</span></a></li>
         <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
         <li><a href="resume.html" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
       </ul>
@@ -51,16 +53,17 @@
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex flex-column justify-content-center">
-    <div class="container" data-aos="zoom-in" data-aos-delay="100">
+    <div class="container" data-aos="zoom-in" data-aos-delay="100" style="text-align: center;">
       <h1>Hi, I'm Emanuel! 👋 </h1>
-      <p> I like to <span class="typed" data-typed-items="solve problems, build software, automate stuff, help others, learn new things"></span></p>
+      <!-- <p> I am a big fan of <span class="typed" data-typed-items="designing software, automating systems, building scalable solutions, solving challenging problems"></span></p> -->
       <div class="social-links">
         <!-- <a href="https://youtube.com/@chrisdem__" class="youtube" target="_blank"><i class="bx bxl-youtube"></i></a>
         <a href="https://instagram.com/chrisdem__" class="instagram" target="_blank"><i class="bx bxl-instagram"></i></a>
         <a href="https://twitter.com/chrisdem__" class="twitter" target="_blank"><i class="bx bxl-twitter"></i></a> -->
+        <a href="#about" class="github"><i class="bx bx-user"></i></a>
         <a href="https://github.com/emanueldumitru" class="github" target="_blank" ><i class="bx bxl-github"></i></a>
         <a href="https://www.linkedin.com/in/emanueldumitru" class="linkedin" target="_blank" ><i class="bx bxl-linkedin"></i></a>
-
+        <a href="https://drive.google.com/file/d/1lVtttBOe4bq-OLB22Qsu2MmIWT9xgl_4/view?usp=sharing" class="bx bx-file-blank" target="_blank"></a>
       </div>
     </div>
   </section><!-- End Hero -->
@@ -81,11 +84,25 @@
             <img src="assets/img/profile-img.jpg" class="img-fluid" alt="">
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content">
-            <h3>Senior Software Engineer</h3>
+            <h3>Software Engineer </h3>
             <p class="fst-italic">
-              <p class="fst-italic">With over 7 years of experience in software engineering, I specialize in Java Spring Boot development, Python scripting, automation, and cloud-based ETL pipelines. I hold certifications as a SAFe Advanced Scrum Master and Product Owner/Product Manager. I have successfully conducted training sessions on Python and Java Spring Boot, sharing my extensive expertise in these areas. My professional focus is on leveraging collaborative problem-solving to deliver impactful and innovative solutions.</p>
-
+              <p class="fst-italic">I specialize in building scalable software and automation solutions using Python and Java technologies, with deep expertise in data engineering, ETL pipeline development, and cloud-native architecture.</p>
               
+              <p class="fst-italic">My expertise spans:</p>
+
+              <p class="fst-italic">✅ Microservices & Distributed Systems – Designing and implementing scalable microservices architectures with Java and Spring Boot, ensuring resilience, efficiency, and seamless integration in distributed environments.</p>
+
+              <p class="fst-italic">✅ Cloud & Infrastructure – Building containerized, cloud-native solutions using Docker, Kubernetes, and AWS/GCP cloud technologies, optimizing performance, scalability, and deployment efficiency.</p>    
+
+              <p class="fst-italic">✅ Automation & Scripting – Automating complex workflows, infrastructure tasks, and data processes using Python and shell scripting to increase efficiency and reduce operational overhead.</p>    
+              
+              <p class="fst-italic">✅ ETL & Data Pipelines – Designing and optimizing workflows for seamless data ingestion and transformation.</p>
+              
+              <p class="fst-italic">✅ Batch & Streaming Data Processing – Developing robust batch and real-time data processing solutions.</p>
+              
+              <p class="fst-italic">💡 Passionate about problem-solving, performance optimization, and automation, I thrive in environments that require engineering robust, scalable solutions for complex data challenges.</p>
+              
+              <p class="fst-italic">💡 Always exploring new technologies to enhance efficiency and drive innovation.</p>
 
             </p>
             <div class="row">
@@ -174,7 +191,7 @@
 
         <div class="section-title">
           <h2>Skills ⚙️</h2>
-          <p> In the past years I've worked with many technologies and got experience working in different areas, working in large teams on big projects </p>
+          <p>Over the past years, I've gained experience with various technologies and worked across different domains, collaborating with large teams on major projects.</p>
         </div>
 
         <div class="row skills-content">
@@ -183,112 +200,132 @@
           <div class="col-lg-6">
             
             <div class="progress">
-              <span class="skill">Python for Data Engineering, SQL, Prefect, Airflow <i class="val">100%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              <span class="skill">Python for Data Engineering, AI, Machine Learning</span>
+              <div>
+                <i class="bx bxl-python" style="font-size: 24px;"></i>
+                <i class="bx bx-data" style="font-size: 24px;"></i>
+                <i class="bx bx-play-circle" style="font-size: 24px;"></i> <!-- Streaming Data -->
+    <i class="bx bx-time" style="font-size: 24px;"></i> <!-- Real-time Processing -->
+    <i class="bx bx-message" style="font-size: 24px;"></i> <!-- Message Queue -->
+    <i class="bx bx-layer" style="font-size: 24px;"></i> <!-- Batch Data -->
+    <i class="bx bx-brain" style="font-size: 24px;"></i> <!-- Machine Learning -->
+    
+                
               </div>
             </div>  
 
+            <div class="progress">
+              <span class="skill">Java, Spring Boot for building microservices</span>
+              <div>
+                <i class="bx bxs-coffee" style="font-size: 24px;"></i>
+                <i class="bx bxl-spring-boot" style="font-size: 24px;"></i>
+                
+    <i class="bx bx-api" style="font-size: 24px;"></i> <!-- API Gateway -->
+    <i class="bx bx-search-alt" style="font-size: 24px;"></i> <!-- Service Discovery -->
+    <i class="bx bx-code-alt" style="font-size: 24px;"></i> <!-- Microservice Integration (Spring Boot) -->
+                
+              </div>
+            </div>
+
 
             <div class="progress">
-              <span class="skill">Python for Web Apps and tools, Flask, Django, FastAPI <i class="val">85%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+              <span class="skill">Docker and Kubernetes</span>
+              <div> 
+                <i class="bx bxl-docker" style="font-size: 24px;"></i>
+                <i class="bx bxl-kubernetes" style="font-size: 24px;"></i>
+                
               </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">SQL / NoSQL databases, Big Data Technologies</span>
+              <div>
+                <i class="bx bxs-data" style="font-size: 24px;"></i> <!-- SQL / NoSQL Databases -->
+                <i class="bx bx-bar-chart" style="font-size: 24px;"></i> <!-- Big Data -->
+    <i class="bx bx-database" style="font-size: 24px;"></i> <!-- Relational Databases -->
+    <i class="bx bx-file" style="font-size: 24px;"></i> <!-- Unstructured Data -->
+    <i class="bx bx-layer-plus" style="font-size: 24px;"></i> <!-- NoSQL Databases -->
             </div>
             
-            <div class="progress">
-              <span class="skill">Python for Data Science, Scikit-learn, Tensorflow, Keras <i class="val">60%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
             </div>
 
             <div class="progress">
-              <span class="skill">Java, Spring Boot <i class="val">100%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
+              <span class="skill">AWS and Google Cloud Platform</span>
+              <div>
+                <i class="bx bxl-aws" style="font-size: 24px;"></i> <!-- AWS -->
+                <i class=" bx bxl-google-cloud" style="font-size: 24px;"></i> <!-- Google Cloud Platform -->
             </div>
-
-
-            <div class="progress">
-              <span class="skill">Docker and Kubernetes <i class="val">70%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
+            
             </div>
 
             <div class="progress">
-              <span class="skill">SQL / NoSQL databases, Big Data and Machine Learning <i class="val">70%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
+              <span class="skill">DevOps, Jenkins, Splunk, Datadog, Spinnaker</span>
+              <div>
+                <i class="bx bxl-git" style="font-size: 24px;"></i> <!-- Git -->
+                <i class="bx bxs-dashboard" style="font-size: 24px;"></i> <!-- Git -->
+                <i class="bx bxs-file-find" style="font-size: 24px;"></i> <!-- Git -->
+                
 
-            <div class="progress">
-              <span class="skill">AWS and Google Cloud Platform <i class="val">75%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
+                
 
-            <div class="progress">
-              <span class="skill">DevOps <i class="val">75%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
             </div>
-
-            <div class="progress">
-              <span class="skill">Frontend <i class="val">25%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
+            
             </div>
-
           </div>
 
-          <div class="col-lg-6">
+          <div class="col-lg-6" style="display: none;">
             <div class="progress">
-              <span class="skill">Analytical reasoning, Decision making, Adaptive learning <i class="val">100%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
+              <span class="skill">Analytical reasoning, Decision making, Adaptive learning</span>
+              <div>
+                <i class="bx bx-line-chart" style="font-size: 24px;"></i> <!-- Analytical Reasoning -->
+                <i class="bx bx-brain" style="font-size: 24px;"></i> <!-- Decision Making -->
+                <i class="bx bx-refresh" style="font-size: 24px;"></i> <!-- Adaptive Learning -->
+            </div>            
             </div>
             <div class="progress">
-              <span class="skill">Deploying and maintaining in production <i class="val">100%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
+              <span class="skill">Deploying and maintaining in production</span>
+              <div>
+                <i class="bx bx-cloud-upload" style="font-size: 24px;"></i> <!-- Deploying -->
+                <i class="bx bx-cog" style="font-size: 24px;"></i> <!-- Maintaining in Production -->
             </div>
-
-            <div class="progress">
-              <span class="skill">Autonomy, Leadership, Critical thinking <i class="val">100%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
+            
             </div>
 
             <div class="progress">
-              <span class="skill">Agility, Scrum, SAFe <i class="val">100%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
+              <span class="skill">Autonomy, Leadership, Critical thinking</span>
+              <div>
+                <i class="bx bx-user-check" style="font-size: 24px;"></i> <!-- Autonomy -->
+                <i class="bx bx-dots-horizontal" style="font-size: 24px;"></i> <!-- Leadership -->
+                <i class="bx bx-message-alt-error" style="font-size: 24px;"></i> <!-- Critical Thinking -->
+            </div>
+            
             </div>
 
             <div class="progress">
-              <span class="skill">Innovation and problem solving <i class="val">100%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
+              <span class="skill">Agility, Scrum, SAFe</span>
+              <div>
+                <i class="bx bx-run" style="font-size: 24px;"></i> <!-- Agility -->
+                <i class="bx bx-group" style="font-size: 24px;"></i> <!-- Scrum -->
+                <i class="bx bx-grid-alt" style="font-size: 24px;"></i> <!-- SAFe -->
+            </div>
+            
             </div>
 
             <div class="progress">
-              <span class="skill">Coaching and motivation <i class="val">100%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              <span class="skill">Innovation and problem solving</span>
+              <div>
+                <i class="bx bx-bulb" style="font-size: 24px;"></i> <!-- Innovation -->
+                <i class="bx bx-wrench" style="font-size: 24px;"></i> <!-- Problem Solving -->
               </div>
+            
+            </div>
+
+            <div class="progress">
+              <span class="skill">Coaching and motivation</span>
+              <div>
+                <i class="bx bx-user-voice" style="font-size: 24px;"></i> <!-- Coaching -->
+                <i class="bx bxs-battery-charging" style="font-size: 24px;"></i> <!-- Motivation -->
+            </div>
             </div>
           </div>
 
@@ -302,21 +339,21 @@
     <!-- End Services Section -->
 
     <!-- ======= Portfolio Section ======= -->
-    <!-- <section id="portfolio" class="portfolio section-bg">
+    <section id="portfolio" class="portfolio section-bg">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Portfolio 📽</h2>
-          <p>In progress section ... working on it</p>
+          <h2>Portfolio 🛠️</h2>
+          <p>Major projects I have contributed to </p>
         </div>
 
         <div class="row">
           <div class="col-lg-12 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
             <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">Machine Learning</li>
-              <li data-filter=".filter-card">Software Development</li>
-              <li data-filter=".filter-web">Trainings</li>
+              <!-- <li data-filter="*" class="filter-active">All</li> -->
+              <!-- <li data-filter=".filter-app">Data Engineering</li> -->
+              <!-- <li data-filter=".filter-card">Software Engineering</li> -->
+              <!-- <li data-filter=".filter-web">Trainings</li> -->
             </ul>
           </div>
         </div>
@@ -325,41 +362,13 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Machine Learning 1</h4>
-                <p>App</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Trainings 1</h4>
-                <p>Web</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
               <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Machine Learning 2</h4>
-                <p>App</p>
+                <h4>Grubhub</h4>
                 <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                  <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="I worked on pricing services, market experiments, and
+                  scalable cloud microservices and data pipelines using
+                  Java, Spring Boot, Python, SQL, Spark and AWS."><i class="bx bx-plus"></i></a>
                 </div>
               </div>
             </div>
@@ -369,17 +378,44 @@
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Software Development 1</h4>
-                <p>Card</p>
+                <h4>Onyxia Cyber</h4>
                 <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                  <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="I developed the Onyxia platform, empowering CISOs
+                  with cybersecurity insights via Python, AWS, Docker,
+                  and dynamic data pipelines."><i class="bx bx-plus"></i></a>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Orange</h4>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="I lead the technical aspects of Malima M2M, managing
+                  10+ million SIM cards and mentoring in Python, Java,
+                  and Spring."><i class="bx bx-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Trainings 1</h4>
+                <p>Web</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div> -->
+
+          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
@@ -447,87 +483,42 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
 
         </div>
 
       </div>
-    </section> -->
+    </section>
     <!-- End Portfolio Section -->
     
     <!-- ======= Testimonials Section ======= -->
-    <section id="testimonials" class="testimonials section-bg" style="display: none;">
+    <section id="testimonials" class="testimonials section-bg">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Testimonials</h2>
+          <h2>Recommendations 👍</h2>
         </div>
 
         <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
           <div class="swiper-wrapper">
 
+            
+            
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                <h3>Saul Goodman</h3>
-                <h4>Ceo &amp; Founder</h4>
+                <img src="assets/img/testimonials/empty_linkedin_photo.png" class="testimonial-img" alt="">
+                <h3><a href="https://www.linkedin.com/in/dbattat1">Dan Battat</a></h3>
+                <h4>Software Engineer</h4>
                 <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  <!-- <i class="bx bxs-quote-alt-left quote-icon-left"></i> -->
+                  I had the pleasure of working closely with Emanuel on several challenging projects over the past year.
                 </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                <h3>Sara Wilsson</h3>
-                <h4>Designer</h4>
+                <p>He is an exceptional software engineer with a unique combination of technical expertise, creativity, and strong problem-solving skills.</p>
                 <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  I highly recommend Emanuel for any software engineering role. He is not only a skilled developer but also a reliable and adaptable professional who can thrive in dynamic and challenging environments.
+                  <!-- <i class="bx bxs-quote-alt-right quote-icon-right"></i> -->
                 </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-                <h3>Jena Karlis</h3>
-                <h4>Store Owner</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-                <h3>Matt Brandon</h3>
-                <h4>Freelancer</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-                <h3>John Larson</h3>
-                <h4>Entrepreneur</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
+                <p>I am confident that his contributions will be a tremendous asset to any team or project.</p>
               </div>
             </div><!-- End testimonial item -->
 
@@ -615,9 +606,10 @@
         <a href="https://twitter.com/chrisdem__" class="twitter" target="_blank"><i class="bx bxl-twitter" target="_blank" ></i></a> -->
         <a href="https://github.com/emanueldumitru" class="github" target="_blank"><i class="bx bxl-github" target="_blank" ></i></a>
         <a href="https://www.linkedin.com/in/emanueldumitru" class="linkedin" target="_blank"><i class="bx bxl-linkedin" target="_blank" ></i></a>
+        <a href="https://drive.google.com/file/d/1lVtttBOe4bq-OLB22Qsu2MmIWT9xgl_4/view?usp=sharing" class="bx bx-file-blank" target="_blank"></a>
       </div>
       <div class="copyright">
-        &copy; Copyright <strong><span>emanueldumitru.github.io 2024</span></strong>. All Rights Reserved
+        &copy; Copyright <strong><span>emanueldumitru.github.io 2025</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
       </div>
